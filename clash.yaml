@@ -71,92 +71,218 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
 proxies:
+- flow: xtls-rprx-vision
+  name: 156.231.140.34_OpenAI
+  network: tcp
+  port: 19085
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+  server: 156.231.140.34
+  servername: www.lovelive-anime.jp
+  tls: true
+  type: vless
+  uuid: 3c5640c5-0e1b-4081-f174-0361c3c94d14
+- name: 192.3.179.114_OpenAI
+  network: ws
+  port: 443
+  server: 172.67.200.11
+  servername: hu9l7.890606.xyz
+  tls: true
+  type: vless
+  uuid: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
+  ws-opts:
+    headers:
+      Host: hu9l7.890606.xyz
+    path: /jAcfFDEOj85lz42MdhsCLV
+- alterId: 0
+  cipher: auto
+  name: 79.127.142.59_OpenAI
+  network: tcp
+  port: 180
+  server: 89.18.58.63
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: CA_Vaughan_Cloudflare, Inc._OpenAI1
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: CA_Vaughan_Cloudflare, Inc._OpenAI2
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 155.248.219.28
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: DE_Frankfurt am Main_Amazon Technologies Inc._OpenAI
+  network: ws
+  port: 443
+  server: 108.162.196.159
+  servername: cr7777.rayan.dpdns.org
+  tls: true
+  type: vless
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      Host: cr7777.rayan.dpdns.org
+    path: /?ed=2560flow=-udp443flow=-udp443
+- flow: ''
+  name: FI_Lappeenranta_Google LLC_OpenAI
+  network: ws
+  port: 443
+  server: 104.24.222.73
+  servername: cr7.rayan.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      Host: cr7.rayan.dpdns.org
+    path: sinavm-sinavm/?ed=2560
 - name: FR_Ivry-sur-Seine_Online S.A.S._OpenAI
   password: dongtaiwang.com
-  port: 59967
+  port: 23587
   server: 195.154.33.70
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: HK_Hong Kong_Alibaba (US) Technology Co., Ltd._OpenAI
+- name: RU_Moscow_LLC BAXET
+  password: dongtaiwang.com
+  port: 64816
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+- name: RU_Moscow_LLC Baxet
+  password: dongtaiwang.com
+  port: 32555
+  server: 46.29.163.171
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+- flow: ''
+  name: US_Boydton_Microsoft Corporation_OpenAI
   network: ws
-  port: 80
-  server: 45.131.5.206
-  servername: gozargah.validbv7996.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- cipher: aes-256-cfb
-  name: JP_Tokyo_Amazon Technologies Inc._OpenAI1
-  password: amazonskr05
   port: 443
-  server: 52.197.57.24
-  type: ss
-- cipher: aes-256-cfb
-  name: JP_Tokyo_Amazon Technologies Inc._OpenAI2
-  password: amazonskr05
-  port: 443
-  server: 52.199.237.27
-  type: ss
-- cipher: aes-256-cfb
-  name: SG_Singapore_Amazon Technologies Inc._OpenAI
-  password: amazonskr05
-  port: 443
-  server: 13.229.210.217
-  type: ss
-- cipher: aes-256-cfb
-  name: SG_Singapore_Amazon.com, Inc._OpenAI
-  password: amazonskr05
-  port: 443
-  server: 13.250.5.171
-  type: ss
-- name: US_Portland_Amazon.com, Inc._OpenAI
-  network: ws
-  port: 80
-  server: 45.131.5.27
-  servername: gozargah.validbv7996.ir
-  tls: false
-  type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳 @MxlShare@WangCai2
-- flow: xtls-rprx-vision
-  name: github.com/Ruk1ng001_1
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t9.qifei.app
-  servername: www.amazon.com
+  server: 104.16.188.41
+  servername: cr7.traneh.dpdns.org
   tls: true
   type: vless
-  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
-- flow: xtls-rprx-vision
-  name: github.com/Ruk1ng001_2
-  network: tcp
-  port: 1443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t14.qifei.app
-  servername: www.amazon.com
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- flow: ''
+  name: US_Kent_The Constant Company_OpenAI
+  network: ws
+  port: 443
+  server: 104.16.186.41
+  servername: cr7.traneh.dpdns.org
   tls: true
   type: vless
-  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
-- cipher: aes-256-cfb
-  name: ❓_🇸🇬_💼_github.com/Ruk1ng001_
-  password: amazonskr05
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- flow: xtls-rprx-vision
+  name: US_Los Angeles_Akile LTD_OpenAI
+  network: tcp
+  port: 29664
+  reality-opts:
+    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+  server: 156.229.163.209
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  uuid: b2d79249-2307-4b51-8d76-f12a5ed6e20d
+- flow: ''
+  name: US_Los Angeles_The Constant Company_OpenAI1
+  network: ws
   port: 443
-  server: 13.229.48.116
-  type: ss
+  server: 104.19.77.118
+  servername: cr777.rayan.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      Host: cr777.rayan.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- flow: ''
+  name: US_Los Angeles_The Constant Company_OpenAI2
+  network: ws
+  port: 443
+  server: 104.16.187.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- name: US_Reston_OVH SAS_OpenAI1
+  network: ws
+  port: 443
+  server: g2.com
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: /sinavm-sinavm/?ed=2560flow=-udp443
+- flow: ''
+  name: US_Reston_OVH SAS_OpenAI2
+  network: ws
+  port: 443
+  server: 104.16.190.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- flow: ''
+  name: US_Reston_OVH SAS_OpenAI3
+  network: ws
+  port: 443
+  server: 104.16.189.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- flow: xtls-rprx-vision
+  name: ❓_🇺🇸_💻_github.com/Ruk1ng001_
+  network: tcp
+  port: 30158
+  reality-opts:
+    public-key: n7Ptb-3f4pw0D-hG-UP8Dp5Gf8J8Uxn029JMwdTyEFc
+    short-id: ee9e2505
+  server: 170.9.225.44
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
 proxy-groups:
 - name: PROXY
   type: select
@@ -172,16 +298,25 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
+  - 156.231.140.34_OpenAI
+  - 192.3.179.114_OpenAI
+  - 79.127.142.59_OpenAI
+  - CA_Vaughan_Cloudflare, Inc._OpenAI1
+  - CA_Vaughan_Cloudflare, Inc._OpenAI2
+  - DE_Frankfurt am Main_Amazon Technologies Inc._OpenAI
+  - FI_Lappeenranta_Google LLC_OpenAI
   - FR_Ivry-sur-Seine_Online S.A.S._OpenAI
-  - HK_Hong Kong_Alibaba (US) Technology Co., Ltd._OpenAI
-  - JP_Tokyo_Amazon Technologies Inc._OpenAI1
-  - JP_Tokyo_Amazon Technologies Inc._OpenAI2
-  - SG_Singapore_Amazon Technologies Inc._OpenAI
-  - SG_Singapore_Amazon.com, Inc._OpenAI
-  - US_Portland_Amazon.com, Inc._OpenAI
-  - github.com/Ruk1ng001_1
-  - github.com/Ruk1ng001_2
-  - ❓_🇸🇬_💼_github.com/Ruk1ng001_
+  - RU_Moscow_LLC BAXET
+  - RU_Moscow_LLC Baxet
+  - US_Boydton_Microsoft Corporation_OpenAI
+  - US_Kent_The Constant Company_OpenAI
+  - US_Los Angeles_Akile LTD_OpenAI
+  - US_Los Angeles_The Constant Company_OpenAI1
+  - US_Los Angeles_The Constant Company_OpenAI2
+  - US_Reston_OVH SAS_OpenAI1
+  - US_Reston_OVH SAS_OpenAI2
+  - US_Reston_OVH SAS_OpenAI3
+  - ❓_🇺🇸_💻_github.com/Ruk1ng001_
 - name: Fallback
   type: fallback
   url: http://www.google.com/generate_204
@@ -198,7 +333,7 @@ proxy-groups:
   interval: 600
   tolerance: 2000
   proxies:
-  - HK_Hong Kong_Alibaba (US) Technology Co., Ltd._OpenAI
+  - DIRECT
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -214,8 +349,7 @@ proxy-groups:
   interval: 600
   tolerance: 2000
   proxies:
-  - JP_Tokyo_Amazon Technologies Inc._OpenAI1
-  - JP_Tokyo_Amazon Technologies Inc._OpenAI2
+  - DIRECT
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
@@ -223,8 +357,7 @@ proxy-groups:
   interval: 600
   tolerance: 2000
   proxies:
-  - SG_Singapore_Amazon Technologies Inc._OpenAI
-  - SG_Singapore_Amazon.com, Inc._OpenAI
+  - DIRECT
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -232,8 +365,14 @@ proxy-groups:
   interval: 600
   tolerance: 2000
   proxies:
-  - HK_Hong Kong_Alibaba (US) Technology Co., Ltd._OpenAI
-  - US_Portland_Amazon.com, Inc._OpenAI
+  - US_Boydton_Microsoft Corporation_OpenAI
+  - US_Kent_The Constant Company_OpenAI
+  - US_Los Angeles_Akile LTD_OpenAI
+  - US_Los Angeles_The Constant Company_OpenAI1
+  - US_Los Angeles_The Constant Company_OpenAI2
+  - US_Reston_OVH SAS_OpenAI1
+  - US_Reston_OVH SAS_OpenAI2
+  - US_Reston_OVH SAS_OpenAI3
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: OpenAI
   type: url-test
@@ -241,13 +380,22 @@ proxy-groups:
   interval: 600
   tolerance: 500
   proxies:
+  - 156.231.140.34_OpenAI
+  - 192.3.179.114_OpenAI
+  - 79.127.142.59_OpenAI
+  - CA_Vaughan_Cloudflare, Inc._OpenAI1
+  - CA_Vaughan_Cloudflare, Inc._OpenAI2
+  - DE_Frankfurt am Main_Amazon Technologies Inc._OpenAI
+  - FI_Lappeenranta_Google LLC_OpenAI
   - FR_Ivry-sur-Seine_Online S.A.S._OpenAI
-  - HK_Hong Kong_Alibaba (US) Technology Co., Ltd._OpenAI
-  - JP_Tokyo_Amazon Technologies Inc._OpenAI1
-  - JP_Tokyo_Amazon Technologies Inc._OpenAI2
-  - SG_Singapore_Amazon Technologies Inc._OpenAI
-  - SG_Singapore_Amazon.com, Inc._OpenAI
-  - US_Portland_Amazon.com, Inc._OpenAI
+  - US_Boydton_Microsoft Corporation_OpenAI
+  - US_Kent_The Constant Company_OpenAI
+  - US_Los Angeles_Akile LTD_OpenAI
+  - US_Los Angeles_The Constant Company_OpenAI1
+  - US_Los Angeles_The Constant Company_OpenAI2
+  - US_Reston_OVH SAS_OpenAI1
+  - US_Reston_OVH SAS_OpenAI2
+  - US_Reston_OVH SAS_OpenAI3
   filter: (?i)OpenAI
 - name: Claude
   type: url-test
